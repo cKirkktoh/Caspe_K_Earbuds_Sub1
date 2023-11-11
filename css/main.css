@@ -90,20 +90,17 @@ body {
   min-height: 200px;
 }
 
-.main .content-box li {
-  display: none;
-}
 
 model-viewer {
   width: auto;
   max-width: 1200px;
   height: 700px;
-  background: url(../media/background.jpg);
+  background: url(../images/background.jpg);
   margin: 0 auto;
 }
 
 .Hotspot {
-  background: url(../media/hotspot.svg) center no-repeat;
+  background: url(../images/hotspot.svg) center no-repeat;
   border: 0px;
   width: 45px;
   height: 38px;
