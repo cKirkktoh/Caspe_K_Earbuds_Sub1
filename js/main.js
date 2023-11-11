@@ -1,37 +1,49 @@
+// Script 1
 (() => {
-    //console.log("IIFE Fired");
-    //variables
-    const model = document.querySelector("#model");
-    const hotspots = document.querySelectorAll(".Hotspot");
-  
-    //functions
-    function modelLoaded() {
-      //console.log(hotspots);
+  // Your first script code goes here
+  const model = document.querySelector("#model");
+  const hotspots = document.querySelectorAll(".Hotspot");
+
+  function modelLoaded() {
       hotspots.forEach(hotspot => {
-        hotspot.style.display = "block";
+          hotspot.style.display = "block";
       });
-    }
-  
-    function showInfo() {
-      //console.log(this.slot);
-      //console.log(`#${this.slot}`);
-      //since the slot value matches the id value I can use the slot value as a selector to get to the div I want.
+  }
+
+  function showInfo() {
       let selected = document.querySelector(`#${this.slot}`);
       gsap.to(selected, 1, { autoAlpha: 1 });
-    }
-  
-    function hideInfo() {
-      //console.log(this.slot);
-      //console.log(`#${this.slot}`);
+  }
+
+  function hideInfo() {
       let selected = document.querySelector(`#${this.slot}`);
       gsap.to(selected, 1, { autoAlpha: 0 });
-    }
-  
-    //Event Listener
-    model.addEventListener("load", modelLoaded);
-  
-    hotspots.forEach(function (hotspot) {
+  }
+
+  model.addEventListener("load", modelLoaded);
+
+  hotspots.forEach(function (hotspot) {
       hotspot.addEventListener("mouseover", showInfo);
       hotspot.addEventListener("mouseout", hideInfo);
-    });
-  })();
+  });
+})();
+
+// Script 2
+(() => {
+  // Your second script code goes here
+  const burgerMenu = document.getElementById('burger-menu');
+  const navLinks = document.querySelector('.nav ul');
+
+  burgerMenu.addEventListener('click', () => {
+      if (window.innerWidth <= 475) {
+          if (navLinks.style.display === 'block') {
+              navLinks.style.display = 'none';
+              burgerMenu.classList.remove('active');
+          } else {
+              navLinks.style.display = 'block';
+              burgerMenu.classList.add('active');
+          }
+      }
+  });
+})();
+
