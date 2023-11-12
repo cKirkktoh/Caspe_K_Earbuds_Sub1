@@ -93,13 +93,12 @@ body {
   margin: 0;
 }
 
-.logo h1 {
-  font-size: 32px;
+.logo img {
+  width: 100px; 
+  height: auto;
+  margin-left: 20px;
 }
 
-.logo p {
-  font-size: 19px;
-}
 
 #burger-menu {
   display: none;
