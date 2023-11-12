@@ -419,42 +419,42 @@ video {
 }
 
 /* Scrolling Animation */
-.model-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f7f7f7;
-  padding: 40px;
-}
 
-.model-box1 {
-  background-color: #fff;
-  border-radius: 5px;
+.scroll-animation {
+  background-color: black;
+  overflow: hidden;
+  color: white;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 40%;
-  margin-right: 20px;
 }
 
-.model1 h2 {
+#explode-view {
+  max-width: 100%;
+  /* Add styles for your canvas here */
+}
+
+.product-name {
   font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.description h3 {
+  color: #FFD700; /* Gold color for headings */
+  margin-top: 0;
+}
+
+.description p {
   margin-bottom: 20px;
 }
 
-.model-description {
-  flex-grow: 1;
-}
 
-.model-description h3 {
-  font-size: 24px;
-  margin-top: 20px;
-}
-
-.model-description p {
-  font-size: 19px;
-  margin-bottom: 20px;
-}
 
 /* Specs Section */
 .specifications {

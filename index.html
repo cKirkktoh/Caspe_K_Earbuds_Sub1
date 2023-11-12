@@ -27,10 +27,9 @@
 
     <section class="welcome-section">
         <div class="welcome-text">
-          <h1>Welcome to Klang Earbuds</h1>
+          <h1>Welcome to Klint Earbuds</h1>
           <p>Experience the ultimate sound quality with our premium earbuds.</p>
         </div>
-        <img class="earbuds-image" src="earbuds-image.jpg" alt="Earbuds">
     </section>
 
     <div class="grid-container">
@@ -126,24 +125,18 @@
             </video>
         </section>
     </div>
-    <section class="model-section">
-        <div class="model-box1">
-            <h2>Explore in 3D</h2>
-            <div class="model1">
-                <!-- I will add my model here -->
-                <p>Another 3d model</p>
-            </div>
+    <div class="scroll-animation">
+        <canvas id="explode-view"></canvas>
+        <p class="product-name">Klint Earbuds</p>
+        <div class="description">
+            <h3>Dive into Sonic Luxury</h3>
+            <p>Embark on an audio journey like never before with our cutting-edge wireless earbuds. Immerse yourself in a realm of premium sound that transforms your music into a captivating experience.</p>
+            <h3>Elegance Redefined</h3>
+            <p>Indulge in comfort and sophistication with our earbuds' sleek and contemporary design. Elevate your style with the perfect blend of fashion and function for your daily adventures.</p>
+            <h3>Uninterrupted Harmony</h3>
+            <p>Enjoy an extended 10-hour playback with our long-lasting battery. Stay effortlessly connected and entertained throughout the day, and the included charging case ensures you remain powered up on the move.</p>
         </div>
-        <div class="model-description">
-            <h3>Immerse Yourself in Sound</h3>
-            <p>Experience the next level of audio with our wireless earbuds. Immerse yourself in high-quality sound that brings your music to life.</p>
-            <h3>Sleek and Stylish</h3>
-            <p>Our earbuds are designed for comfort and style. With a sleek and modern look, they are the perfect accessory for your daily life.</p>
-            <h3>Long-lasting Battery</h3>
-            <p>With a battery life of up to 10 hours, our earbuds will keep you connected and entertained throughout the day. The included charging case ensures you stay powered up on the go.</p>
-        </div>
-    </section>
-
+    </div>
     <section class="specifications">
         <h2 class="spec-title">Technical Specifications</h2>
         <div class="spec-list">
@@ -199,8 +192,9 @@
     <footer class="footer">
         &copy; 2023 IDP3 Earbud Co.
     </footer>
-    <script src="js/main.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
