@@ -636,9 +636,8 @@ video {
           "main"
           "model"
           "sidebar"
-          "model1"
           "specifications"
-          "xray"
+          "xray-section"
           "footer";
   }
 
@@ -728,5 +727,12 @@ video {
 
   .xray-image img {
       max-width: 100%;
+  }
+
+  .xray-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }
