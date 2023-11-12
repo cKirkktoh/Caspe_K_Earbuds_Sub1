@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Wireless Earbuds</title>
 </head>
@@ -49,7 +52,7 @@
                 <h2>Specifications</h2>
                 <ul>
                     <li>Model: XYZ Earbuds</li>
-                    <li>Color: Black</li>
+                    <li>Color: Dark Red</li>
                     <li>Battery Life: Up to 10 hours</li>
                     <li>Charging Case: Included</li>
                 </ul>
@@ -169,9 +172,17 @@
 
     <section class="xray-section">
         <h2>X-ray View</h2>
-        <div class="xray-image">
-            <img src="xray-earbuds.jpg" alt="X-ray View of Earbuds">
+        <div id="mobile-tablet-view">
+            <img src="images/earbuds_xray.jpg" alt="X ray view of ear bud">
+            <img src="images/earbud.jpg" alt="Regular view of ear bud">
         </div>
+        <div id="outerShell">
+            <div id="imageCon">
+            <div class="slideImage image-right"></div> <!-- wire version -->
+            <div class="slideImage image-left"></div> <!-- actual earbuds -->
+            <div class="slideImage image-drag"></div> <!-- div to create black bar -->
+            </div>
+        </div>  
         <p>Explore the internal components of our cutting-edge wireless earbuds with our X-ray view.</p>
     </section>
     
