@@ -35,5 +35,6 @@ Learn more about our new earbuds concept!
 
 ## Credits
 code: Kirk Caspe
+design: Kirk Caspe
 
 ## License
